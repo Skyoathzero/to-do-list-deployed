@@ -1,0 +1,189 @@
+*{
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #102542;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.input-container {
+  margin: 10% 0 2% 0;
+  width: 100vh;
+  height: 10vh;
+  border-radius: 25px;
+  background-color:white;
+  display : flex;
+  align-items: center;
+  max-width: 60% ;
+}
+
+
+
+.btn{
+  background: #D72638;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  border-color: transparent;
+  border-radius: 25px;
+  text-transform: capitalize;
+  color: white;
+  margin-left : 0.5em;
+  max-height:60% ;
+}
+
+.btn:hover{background: #D72615 ;}
+
+.input-form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control{
+  display:grid;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+  align-items: center;
+  place-items: center;}
+
+.list-container{
+  position: relative;
+  display:grid;
+  width: 50%;
+  margin: 0 0;
+  background-color:white;
+  border-radius: 25px;
+  align-items: center !important;
+  justify-content:flex;
+  min-width:592px;
+}
+.task{
+
+  position:relative;
+  display:flex;
+  min-width: 80%;
+  background-color:lightgray;
+  border-radius: 25px;
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+  align-items: center;
+}
+.task .dot{margin-left:1em;}
+.task > *{
+  font-size: 1rem;
+  margin: 0.5em 2em;
+  
+}
+
+.edit-btn >*{
+  color:black;
+}
+.edit-btn >*:hover{
+  color:green
+}
+.delete-btn >*{
+  color:black;
+}
+.delete-btn >*:hover{
+  color:red;
+}
+
+.task-btn-container{
+  display:flex;
+}
+.delete-btn{
+  
+  padding: 0.5rem;
+  fill-opacity:100%;
+  background-color:transparent;
+  border-radius: 100px;
+  border-color: black;
+  border-style: none;
+}
+.edit-btn{
+  
+  padding: 0.5rem ;
+  fill-opacity:100%;
+  background-color:transparent;
+  border-radius: 100px;
+  border-color: black;
+  border-style: none;
+}
+.task-object{
+  display:flex;
+}
+
+.task-btn-container{
+  margin: 0.45rem 0;
+  display:inline-flex;
+  justify-content:center;
+  align-items: center;
+  position:absolute;
+  right:20px;
+}
+.pos-btn{
+  position: relative;
+  display:block;
+  align-items:center;
+  margin: left 10px;
+
+}
+
+.pos-btn button{
+  display:block;
+  fill-opacity:100%;
+  background-color:transparent;
+  border-color: transparent;
+}
+
+.dot{
+  height:1rem;
+  width:1rem;
+  background-color:black;
+  border-radius:50%;
+  display:flex;
+}
+
+.timer-control{
+  position: relative;
+  display:flex;
+  align-items:center;
+  margin-left: 30px;
+  background-color:transparent;
+  border-color: transparent;
+  align-items:center;
+}
+
+.timer-control>*{
+  color:gray;
+  width:2rem;
+  height:2rem;
+}
+.task > p{
+  position: absolute;
+  right:20px;
+}
